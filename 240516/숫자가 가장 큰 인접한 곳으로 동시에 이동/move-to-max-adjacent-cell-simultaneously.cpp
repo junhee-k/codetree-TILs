@@ -18,8 +18,8 @@ void move(int x, int y){
         int ny = y + dy[i];
         if(nx<=0 || ny <=0 || nx > n || ny > n)
             continue;
-        if(arr[nx][ny]>arr[x][y] && max_v<arr[nx][ny]){
-            max_v = arr[nx][ny];
+        if(arr[ny][nx]>arr[y][x] && max_v<arr[ny][nx]){
+            max_v = arr[ny][nx];
             dir = i;
         }
     }

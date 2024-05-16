@@ -12,7 +12,7 @@ int cnt[21][21];
 
 void move(int x, int y){
     int max_v = 0;
-    int dir = -1;
+    int dir = 0;
     for(int i=0; i<4; ++i){
         int nx = x + dx[i];
         int ny = y + dy[i];

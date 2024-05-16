@@ -10,7 +10,7 @@ int dy[] = {-1,1,0,0};
 int arr[21][21];
 int cnt[21][21];
 
-void move(int x, int y){
+void move(int y, int x){
     int max_v = 0;
     int dir = 0;
     for(int i=0; i<4; ++i){
@@ -36,9 +36,9 @@ int main() {
         }
     }
     while(m--){
-        int x,y;
-        cin >> x >> y;
-        ls.emplace_back(x,y);
+        int y,x;
+        cin >> y >> x;
+        ls.emplace_back(y,x);
     }
     while(t--){
         for(int i=1; i<=n; ++i){
